@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage("Pull") {
+            steps {
+                git 'https://github.com/Chaitanyag2121/studentapp-ui.git'
+            }
+        }
+    }
+}
