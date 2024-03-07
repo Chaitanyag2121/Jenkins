@@ -6,5 +6,10 @@ pipeline {
                 git 'https://github.com/Chaitanyag2121/studentapp-ui.git'
             }
         }
+        stage("Build") {
+            steps {
+                sh '/opt/maven/bin/mvn clean package'
+            }
+        }   
     }
 }
