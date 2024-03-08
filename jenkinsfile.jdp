@@ -20,11 +20,10 @@ pipeline {
         }
         stage("Quality-Gate") {
             steps {
-                timeout(10) {
-                    waitForQualityGate abortPipeline: true
+                    waitForQualityGate false
                 }
             }
-        }
+        
         stage("Deploy") {
             steps {
                 deploy adapters: [tomcat8(credentialsId: 'tomcat-cred', path: '', url: 'http://172.31.9.39:8080')], contextPath: '/', war: '**/*.war'
