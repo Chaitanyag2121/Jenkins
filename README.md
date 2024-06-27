@@ -1,5 +1,7 @@
 ## Jenkins
 
+Jenkins is a Java-based open-source automation platform with plugins designed for continuous integration. It is used to continually create and test software projects, making it easier for developers and DevOps engineers to integrate changes to the project and for consumers to get a new build.
+
 ## Installation of Jenkins
 
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
